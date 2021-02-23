@@ -1,0 +1,17 @@
+{
+  "name": "Book-Collections-Static",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build:css": "npx tailwindcss-cli@latest build public/style/tailwind.css -o public/style/main.css"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.8.6",
+    "postcss": "^8.2.6",
+    "tailwindcss": "^2.0.3"
+  },
+  "dependencies": {
+    "postcss-cli": "^8.3.1"
+  }
+}
