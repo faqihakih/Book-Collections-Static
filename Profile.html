@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./public/style/main.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <style>
+        *{
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+    <title>Profile</title>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+</head>
+<body>
+    <header class="text-gray-600 body-font shadow-lg mb-8 fixed top-0 w-full z-10 bg-white">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <nav class="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
+                <div>
+                    <div class="bg-white flex items-center rounded-full border border-gray-700">
+                        <input class="rounded-full w-full py-1 px-6 text-gray-700 leading-tight focus:outline-none" id="search" type="text" placeholder="Search">
+                    <div class="p-2">
+                        <a href="./Browser.html" class=" text-gray-700 rounded-full p-2 focus:outline-none w-5 h-5 flex items-center justify-center">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </a> 
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <a class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center mb-4 md:mb-0">
+                <img src="./public/img/Logo.svg" alt="" srcset="" class="h-12">
+            </a>
+            <a class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0" href="./Profile.html">
+                <img src="https://res.cloudinary.com/zada/image/upload/v1614357120/avatar_y6a0zh.png" alt="" srcset="" class="h-12">
+            </a>
+        </div>
+    </header>
+<div class="flex flex-wrap bg-white w-full h-screen lg:mt-28 md:mt-40 sm:mt-64 xs:mt-64">
+    <div class="w-3/12 bg-white rounded p-3 shadow-lg">
+        <ul class="space-y-2 text-sm">
+            <li>
+                <a href="./Profile.html" class="focus:bg-plugin focus:text-white flex items-center space-x-3 text-plugin p-2 rounded-md font-medium hover:bg-plugin hover:text-white bg-white focus:shadow-outline">
+                    <span class="shadow-lg px-3 py-3 rounded-full">
+                        <i class="fas fa-user-alt"></i>
+                    </span>
+                    <span>Profile</span>
+                </a>
+            </li>
+            <li>
+                <a href="./Book.html" class="focus:bg-plugin focus:text-white flex items-center space-x-3 text-plugin p-2 rounded-md font-medium hover:bg-plugin hover:text-white bg-white focus:shadow-outline">
+                    <span class="shadow-lg px-3 py-3 rounded-full">
+                        <i class="fas fa-book"></i>
+                    </span>
+                    <span>Books</span>
+                </a>
+            </li>
+            <li>
+                <a href="./Deadline.html" class="focus:bg-plugin focus:text-white flex items-center space-x-3 text-plugin p-2 rounded-md font-medium hover:bg-plugin hover:text-white bg-white focus:shadow-outline">
+                    <span class="shadow-lg px-3 py-3 rounded-full">
+                        <i class="fas fa-exclamation-circle"></i>
+                    </span>
+                    <span>Out of  Date</span>
+                </a>
+            </li>
+            <li>
+                <a href="./WaitingBorrow.html" class="focus:bg-plugin focus:text-white flex items-center space-x-3 text-plugin p-2 rounded-md font-medium hover:bg-plugin hover:text-white bg-white focus:shadow-outline">
+                    <span class="shadow-lg px-3 py-3 rounded-full">
+                        <i class="far fa-clock"></i>
+                    </span>
+                    <span>Waiting Borrow</span>
+                </a>
+            </li>
+            <li>
+                <a href="./Waiting.html" class="focus:bg-plugin focus:text-white flex items-center space-x-3 text-plugin p-2 rounded-md font-medium hover:bg-plugin hover:text-white bg-white focus:shadow-outline">
+                    <span class="shadow-lg px-3 py-3 rounded-full">
+                        <i class="fas fa-check-circle"></i>
+                    </span>
+                    <span>Waiting</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="w-9/12">
+        <div class="p-4 text-gray-500">
+            <section class="text-gray-600 body-font">
+                <div class="container mx-auto flex px-5 py-12 items-center justify-center flex-col">
+                <img class="lg:w-24 md:w-24 w-24 object-cover object-center rounded" alt="hero" src="https://res.cloudinary.com/zada/image/upload/v1614357120/avatar_y6a0zh.png">
+                    <div class="lg:w-4/5 md:w-1/2 bg-white flex flex-col w-full md:py-8 mt-8 md:mt-0">
+                        <div class="relative mb-4">
+                            <label for="name" class="leading-7 text-sm text-gray-600">Username</label>
+                            <input type="text" id="name" name="name" class="w-full bg-white rounded-full border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" value="AliBaTa">
+                        </div>
+                        <div class="relative mb-4">
+                            <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+                            <input type="email" id="email" name="email" class="w-full bg-white rounded-full border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" value="alibata@gmail.com">
+                        </div>
+                        <div class="relative mb-4">
+                            <label for="pass" class="leading-7 text-sm text-gray-600">Password</label>
+                            <input type="password" id="pass" name="password" class="w-full bg-white rounded-full border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" value="apahayi">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+</body>
+</html>
